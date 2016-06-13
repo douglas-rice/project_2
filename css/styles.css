@@ -41,7 +41,7 @@ section h2 {
 }
 
 .main-nav a:hover {
-  background-color: #e1e2ef;
+  background-color: #d4d8db;
 }
 
 #portfolio p {
@@ -127,7 +127,6 @@ Layout Styles
 
 footer {
   border-top: 1px solid #b8bfc4;
-  width
 }
 
 .l-float {
@@ -232,10 +231,11 @@ Media Queries
 
   .bottom-nav a {
     padding: 5px;
+    text-transform: uppercase;
   }
 
   .bottom-nav a:hover {
-    background-color: #e1e2ef;
+    background-color: #d4d8db;
   }
 
 }
