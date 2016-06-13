@@ -170,7 +170,7 @@ Media Queries
 
   .main-header p {
     font-size: 1.25em;
-    padding-bottom: 100px;
+    padding-bottom: 75px;
     margin-bottom: 25px;
   }
 
@@ -245,6 +245,10 @@ Media Queries
   .banner {
     max-width: 1024px;
     margin: 0 auto;
+  }
+
+  .main-header p {
+    padding-bottom: 100px;
   }
 
   #portfolio li {
