@@ -25,63 +25,52 @@ img {
 
 p {
   font-weight: 300;
-  line-height: 1.5;
 }
 
-section h2 {
+h2 {
   font-size: 1em;
   text-transform: uppercase;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  text-align: center;
+}
+
+#wrapper h2 {
+  margin: 20px 0 20px 0;
+  padding: 20px 0 20px 0;
 }
 
 .main-header,
-#bottom {
+#contact {
   background-color: #eff1f7;
+  text-align: center;
+}
+
+.main-header p {
+  line-height: 1.5;
 }
 
 .main-nav a:hover {
   background-color: #d4d8db;
 }
 
-#portfolio p {
-  padding: 0 .75em;
-}
-
-#portfolio li {
-  padding-bottom: 20px;
-}
-
-#gallery a:visited {
-  color: #818689;
-}
-
 .bumper {
   font-weight: 700;
+}
+
+footer {
+  border-top: 1px solid #b8bfc4;
+  padding-right: 1em;
+  padding-left: 1em;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 /* ================================= 
 Layout Styles
 ==================================== */
 
-.container {
-  text-align: center;
-  width: 90%;
-  margin: 0 auto;
-}
-
 .main-header {
-  text-align: center;
-}
-
-.main-header p {
-  padding-top: 5px;
-  padding-bottom: 20px;
-}
-
-.name,
-.main-nav {
-  text-align: center;
+  padding-bottom: 25px;
 }
 
 .name {
@@ -93,6 +82,10 @@ Layout Styles
   padding: 0;
 }
 
+.main-nav li {
+  margin: 0 10px;
+}
+
 .main-nav a {
   display: block;
   background-color: #fff;
@@ -102,6 +95,10 @@ Layout Styles
   margin-bottom: 5px;
 }
 
+.banner p {
+  padding: 0 1em;
+}
+
 .author {
   width: 70%;
   margin: 40px auto 25px;
@@ -109,24 +106,35 @@ Layout Styles
 }
 
 .avatar {
-  max-width: 150px;
+  max-width: 125px;
   border-radius: 100%;
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
+#wrapper {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
 #gallery {
+  margin: 0;
   padding: 0;
 }
 
-#contact {
+#gallery li {
   text-align: center;
+}
+
+#contact {
+  margin: 0 auto;
   padding-top: 30px;
   padding-bottom: 30px;
 }
 
-footer {
-  border-top: 1px solid #b8bfc4;
+.container {
+  max-width: 90%;
+  margin: 0 auto;
 }
 
 .l-float {
@@ -160,6 +168,8 @@ Media Queries
 
 @media (min-width: 768px) {
 
+  
+
   .main-nav li {
     display: inline-block;
   }
@@ -168,10 +178,15 @@ Media Queries
     background-color: #eff1f7;
   }
 
+  section.banner {
+    padding: 0 2em;
+  }
+
   .main-header p {
     font-size: 1.25em;
     padding-bottom: 75px;
     margin-bottom: 25px;
+    text-align: left;
   }
 
   .author {
@@ -182,36 +197,47 @@ Media Queries
     margin-left: 25px;
   }
 
-  #portfolio .container {
-
+  #wrapper {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 0 2.5%;
   }
 
-  #portfolio {
-    background-color: #fff;
-  }
-
-  #portfolio li {
-    float: left;
-    width: 45%;
-    margin: 1%;
-  }
-
-  #portfolio h2 {
-    padding-bottom: 10px;
-  }
+  #wrapper h2 {
+  margin: 20px 0 10px 0;
+  padding: 20px 0 10px 0;
+}
 
   #gallery {
-    margin-top: 0;
+    margin: 0;
+    padding: 0;
+    list-style: none;
   }
 
-  #contact {
-    width: 75%;
-    max-width: 700px;
-    margin: 0 auto;
+  #gallery li {
+    float: left;
+    width: 45%;   /*2 column minus margins*/
+    margin: 2.5%;
+  }
+
+  #gallery li h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 1.1em;
+  }
+  
+  #gallery li a p {
+    margin: 0;
+    padding: 5%;
+    font-size: 1em;
   }
 
   #contact p {
     font-size: 1.25em;
+  }
+
+  .container {
+    max-width: 60%;
   }
 
   .r-float {
@@ -255,26 +281,18 @@ Media Queries
     padding-bottom: 100px;
   }
 
-  #portfolio {
-    width: 90%;
-    margin: 0 auto;
+  #wrapper h2 {
+  margin: 20px 0 5px 0;
+  padding-top: 20px;
+  padding-bottom: 0;
+}
+
+  #gallery li {
+    width: 28.3333%; /* 3 column page minus margins */
   }
 
-  #portfolio li {
-    width: 30%;
-  }
-
-  #contact {
-    width: 55%;
+  .container {
+    max-width: 35%;
   }
 
 }
-
- 
-/*2 issues:
-
-1) floated line items not clearing in 2 column size  
-2) when I change width portfolio section to try to solve issue 1, 
-   the content is no longer centered and i can't figure out how to 
-   center it.  I also realized it's not really centered in large
-   screen either.*/
