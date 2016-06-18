@@ -168,8 +168,6 @@ Media Queries
 
 @media (min-width: 768px) {
 
-  
-
   .main-nav li {
     display: inline-block;
   }
@@ -240,13 +238,16 @@ Media Queries
     max-width: 60%;
   }
 
-  .r-float {
-    display: none;
+  footer {
+    padding-left: 20px;
   }
 
-  #bottom {
-    padding-bottom: 50px;
-    margin-bottom: 10px;
+  .l-float {
+    margin-top: 15px;
+  }
+
+  .r-float {
+    display: none;
   }
 
   .bottom-nav {
@@ -256,7 +257,7 @@ Media Queries
 
   .bottom-nav li {
     display: inline-block;
-    margin-left: 15px;
+    margin-left: 16px;
   }
 
   .bottom-nav a {
@@ -274,13 +275,17 @@ Media Queries
 
  header h1 {
     float: left;
-    margin-left: 20px;
+    margin-left: 25px;
  }
 
  .main-nav {
     float: right;
     margin-right: 20px;
  }
+
+ .main-nav li {
+  margin-right: 0;
+}
 
   .banner {
     max-width: 1024px;
