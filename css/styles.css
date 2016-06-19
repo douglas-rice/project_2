@@ -103,6 +103,7 @@ Layout Styles
   width: 70%;
   margin: 40px auto 25px;
   background-color: #d4d8db;
+  border-radius: .5em;
 }
 
 .avatar {
